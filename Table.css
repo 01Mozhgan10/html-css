@@ -1,0 +1,16 @@
+table,th,td{
+    border: 1px solid black;
+    color: blue;
+}
+table{
+    width: 100%;
+    color: aquamarine;
+}
+th{
+    background-color: aqua;
+}
+td{
+    color: rgb(90, 55, 136);
+    background-color: rgb(240, 229, 213);
+    text-align: center;
+}
