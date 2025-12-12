@@ -1,0 +1,26 @@
+h1{
+    text-align: right;
+    color: red;
+}
+div{
+    text-align:center;
+}
+.text1{
+    text-align:right;
+    font-size: large;
+}
+.text2{
+    text-align:right;
+    font-size: large;
+}
+h2{
+    text-align: right;
+    color: red;
+}
+.ingredients-list{
+    text-align:right;
+
+}
+.ingredients-item{
+   text-align: right;
+}

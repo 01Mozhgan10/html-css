@@ -1,0 +1,31 @@
+img{
+    height: 200px !important;
+}
+
+/*استفاده از فونت*/
+body *{
+    font-family:"Vazir";
+}
+
+/*تعریف فونت*/
+@font-face{
+    font-family:"Vazir";
+    src:url("./font/assets/fonts/Vazir.woff")format("woff");
+    src:url("./font/assets/fonts/Vazir.woff2")format("woff2");
+    font-weight:400;
+}
+@keyframes gallery{
+    50%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translate(-2px);
+    }
+
+}
+
+figure:hover{
+    /*transform: scale(110%) !important;*/
+    box-shadow: 2px 4px 4px 2px rgb(78, 77, 77),0px -4px 4px 2px rgb(78, 77,77);
+    animation:gallery ease alternate infinite 3s;
+}
