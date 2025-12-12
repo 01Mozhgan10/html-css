@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="MovieGallery.css">
+    <title>Movie</title>
+</head>
+
+<body class="bg-dark" dir="rtl">
+
+    <div id="parent" class="d-flex justify-content-center row m-3 ">
+        <div class="col-3 p-0 m-2">
+            <video src="1.mp4" controls class="w-100 p-2 border border-dark bg-danger" poster="1.jpg"></video>
+            <p>نودلیت ذرت مکزیکی</p>
+            <span>0:33</span>
+        </div>
+        <div class="col-3 p-0 m-2">
+            <video controls src="2.mp4" class="w-100 p-2 border border-dark bg-danger" poster="1.jpg"></video>
+            <p>نودل سوسیس کره ای</p>
+            <span>0:23</span>
+        </div>
+        <div class="col-3 p-0 m-2">
+            <video src="3.mp4" controls class="w-100 p-2 border border-dark bg-danger" poster="1.jpg"></video>
+            <p>نودلیت با روغن چیلی</p>
+            <span>0:29</span>
+        </div>
+        <div class="col-3 p-0 m-2">
+            <video src="4.mp4" controls class="w-100 p-2 border border-dark bg-danger" muted poster="1.jpg"></video>
+            <p>کیک شکلاتی خیس</p>
+            <span>0:28</span>
+        </div>
+        <div class="col-3 p-0 m-2">
+            <video src="5.mp4" controls class="w-100 p-2 border border-dark bg-danger" muted poster="2.jpg"> </video>
+            <p>کاپ کیک شکلاتی</p>
+            <span>0:36</span>
+        </div>
+        <div class="col-3 p-0 m-2">
+            <video controls class="w-100 p-2 border border-dark bg-danger" muted poster="1.jpg"> </video>
+            <source src="6.mp4" type="video/mp4">
+            <p>دسر نسکافه</p>
+            <span>0:38</span>
+        </div>
+        <div class="col-3 p-0 m-2">
+            <video controls class="w-100 p-2 border border-dark bg-danger" muted poster="1.jpg"> </video>
+            <source src="7.mp4" type="video/mp4">
+            <p>دسر شکلاتی یخچالی</p>
+            <span>0:34</span>
+        </div>
+        <div class="col-3 p-0 m-2">
+            <video controls class="w-100 p-2 border border-dark bg-danger" muted poster="1.jpg"> </video>
+            <source src="8.mp4" type="video/mp4">
+            <p>پاستا چیلی</p>
+            <span>0:27</span>
+        </div>
+        <div class="col-3 p-0 m-2">
+            <video controls class="w-100 p-2 border border-dark bg-danger" muted poster="1.jpg"> </video>
+            <source src="9.mp4" type="video/mp4">
+            <p>پاستا فسنجون</p>
+            <span>0:37</span>
+        </div>
+    </div>
+    <script>
+        $("video").mouseenter(function () {
+            $(this).parent().children("span").css("display", "none");
+            this.muted = true;
+            this.play();
+        });
+        $("video").mouseleave(function () {
+            $(this).parent().children("span").css("display", "block");
+            // this.pause();
+            // this.currentTime = 0;
+            this.load;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+#parent div{
+    position: relative;
+}
+p{
+    font-size: 22px;
+    color: aliceblue;
+}
+#parent span{
+    position: absolute;
+    bottom: 18%;
+    left: 4%;
+    background-color: yellow;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+}
